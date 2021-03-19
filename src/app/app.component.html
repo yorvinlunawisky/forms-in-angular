@@ -1,7 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form>
+      <!-- With #f="ngForm you could get the Javascript object, created by Angular automatically" -->
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div id="user-data">
           <div class="form-group">
             <label for="username">Username</label>
